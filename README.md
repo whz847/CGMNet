@@ -1,6 +1,13 @@
-## introduction
+## Introduction
 This code combines MRI and WSI to effectively improve various indicators.
 All code of this study will be fully disclosed after the article is accepted. During this period, any inquiries regarding the code or paper can be made to the author.
+## Configuration Environment
+CUDA=11.8
+python=3.9
+numpy=1.24.4
+torch=2.0.0
+torchvision=0.15.1
+pytorch-lightning=2.2.1
 ## Training the model
 python train_IDH_lightning.py
 ## Use SGM
