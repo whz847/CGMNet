@@ -2,7 +2,7 @@
 This code combines MRI and WSI to effectively improve various indicators.
 All code of this study will be fully disclosed after the article is accepted. During this period, any inquiries regarding the code or paper can be made to the author.
 ## Configuration Environment
-CUDA=11.8 \n
+CUDA=11.8  
 python=3.9
 numpy=1.24.4
 torch=2.0.0
