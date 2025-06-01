@@ -8,9 +8,15 @@ numpy=1.24.4
 torch=2.0.0  
 torchvision=0.15.1  
 pytorch-lightning=2.2.1
-## Data Preparation
-MRI:BraTS2020
+## Data preparation
+MRI:BraTS2020  
 WSI:TCGA(https://portal.gdc.cancer.gov/)
+## MRI data preprocessing
+python ./data/preprocess.py
+## WSI data preprocessing
+HistoQC:https://github.com/choosehappy/HistoQC  
+### Extract patches from the whole slide images
+python WSI_data/patch_extraction.py --cancer=GBM --num-cpus=6 --magnification=20 --patch-size=256 --stratify=idh,atrx,p19q --wsi_path --wsi_mask_path --output_path
 ## Training the model
 python train_IDH_lightning.py
 ## Use SGM
