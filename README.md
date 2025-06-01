@@ -16,9 +16,13 @@ python ./data/preprocess.py
 ## WSI data preprocessing
 HistoQC:https://github.com/choosehappy/HistoQC  
 ### Extract patches from the whole slide images
+```python
 python WSI_data/patch_extraction.py --cancer=GBM --num-cpus=6 --magnification=20 --patch-size=256 --stratify=idh,atrx,p19q --wsi_path --wsi_mask_path --output_path
+```
 ## Training the model
+```python
 python train_IDH_lightning.py
+```
 ## Use SGM
 ![image](https://github.com/user-attachments/assets/ef7f5bf4-6adf-4ee8-a45d-22f55028c33e)
 ## No SGM
