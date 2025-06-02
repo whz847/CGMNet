@@ -12,7 +12,9 @@ pytorch-lightning=2.2.1
 MRI:BraTS2020  
 WSI:TCGA(https://portal.gdc.cancer.gov/)
 ## MRI data preprocessing
+```python
 python ./data/preprocess.py
+```
 ## WSI data preprocessing
 HistoQC:https://github.com/choosehappy/HistoQC  
 ### Extract patches from the whole slide images
